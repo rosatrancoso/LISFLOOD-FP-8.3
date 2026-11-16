@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use LISFLOOD-FP 8.3, please cite it as below."
+title: "LISFLOOD-FP 8.3 hydrodynamic model"
+authors:
+  - name: "LISFLOOD-FP developers"
+version: "8.3"
+doi: "10.5281/zenodo.13121119"
+url: "https://doi.org/10.5281/zenodo.13121119"
+preferred-citation:
+  type: software
+  authors:
+    - name: "LISFLOOD-FP developers"
+  title: "LISFLOOD-FP 8.3 hydrodynamic model"
+  version: "8.3"
+  year: 2026
+  publisher: Zenodo
+  doi: "10.5281/zenodo.13121119"
