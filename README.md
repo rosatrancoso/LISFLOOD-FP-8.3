@@ -1,5 +1,8 @@
 # LISFLOOD-FP 8.3: faster flood simulation on NVIDIA GPUs and an Apple Metal back end for FV1
 
+LISFLOOD-FP developers. (2026). LISFLOOD-FP 8.3 hydrodynamic model (Version 8.3) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.13121119 
+
+
 LISFLOOD-FP 8.2 with faster, reproducible CUDA solvers and a new GPU back end
 for Apple computers (Metal, FV1 solver). The numerical method of 8.2 is
 unchanged.
