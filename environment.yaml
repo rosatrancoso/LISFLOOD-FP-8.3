@@ -1,0 +1,10 @@
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - gcc
+  - gfortran
+  - netcdf-fortran
+  - cmake
+  - libgomp
+  - libnuma
