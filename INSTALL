@@ -1,0 +1,27 @@
+
+    conda create -n lisflood-fp_build
+    conda activate lisflood-fp_build
+    conda env update -f environment.yml
+
+Debug:
+
+    cmake -S source -B build -D_CONFIG=$PWD/config.float.cmake -DCMAKE_PREFIX_PATH="$CONDA_PREFIX"
+    cmake --build build -j 16
+
+Release:
+
+    cmake -S source -B build -DCMAKE_BUILD_TYPE=Release -D_CONFIG=$PWD/config.float.cmake -DCMAKE_PREFIX_PATH="$CONDA_PREFIX"
+    cmake --build build -j 16
+
+
+Clean build:
+
+    cmake --build build --target clean
+
+
+Check:
+
+    build/lisflood -version
+    tests/quick_test.sh build/lisflood
+
+
