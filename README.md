@@ -3,9 +3,7 @@
 LISFLOOD-FP developers. (2026). LISFLOOD-FP 8.3 hydrodynamic model (Version 8.3) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.13121119 
 
 
-LISFLOOD-FP 8.2 with faster, reproducible CUDA solvers and a new GPU back end
-for Apple computers (Metal, FV1 solver). The numerical method of 8.2 is
-unchanged.
+LISFLOOD-FP 8.2 with faster, reproducible CUDA solvers and a new GPU back end for Apple computers (Metal, FV1 solver). The numerical method of 8.2 is unchanged.
 
 ## Contents
 
@@ -20,13 +18,14 @@ paper/                       the cases, numbers and figures of the paper
 ```
 
 `source/` is the official LISFLOOD-FP 8.2
-([Zenodo 10.5281/zenodo.13121102](https://doi.org/10.5281/zenodo.13121102))
-without the files the CMake build does not use (Windows and Intel library
-bundles, the old makefiles, prebuilt binaries, manuals, test data and its git
-history), plus the 8.3 changes. To apply the changes to a full 8.2 instead, from
-its top folder: `patch -p1 -E --binary < lisflood-8.2-to-8.3.patch`. This folder
-is also a git repository whose two commits are the 8.2 source and the 8.3
-changes, so `git show` displays exactly what changed.
+([Zenodo 10.5281/zenodo.13121102](https://doi.org/10.5281/zenodo.13121102)) without the files the CMake build does not use (Windows and Intel library bundles, the old makefiles, prebuilt binaries, manuals, test data and its git history), plus the 8.3 changes.
+
+To apply the changes to a full 8.2 instead, from its top folder: 
+```
+patch -p1 -E --binary < lisflood-8.2-to-8.3.patch
+```
+
+This folder is also a git repository whose two commits are the 8.2 source and the 8.3 changes. `git show` displays exactly what changed.
 
 ## What changes
 
